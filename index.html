@@ -9,38 +9,49 @@
        }
        a {
         text-decoration: none;
-        color:dimgray;
+        color: black;
        }
        h1 {
-            color: rgb(245, 4, 185);
             font-size: 60px;
-            background-color: rgb(16, 221, 236);
             text-align: center;
-            border: 15px solid rgb(136, 255, 1);     
+            border-bottom: 1px solid gray;     
             padding-bottom: 10px;
             margin: 0;
             padding: 20px;
         }
-       ol {
-           font-size: 20px;
-           border-right: 15px solid rgb(136, 255, 1);
+       #grid{
+           display: grid;
+           grid-template-columns: 300px 2fr;
+           border-bottom: 1px solid gray;
+       }
+       #grid ol{
+           font-size: 15px;
+           border-right: 1px solid gray;
            width: 200px;
            margin: 0;
            margin-left: 30px;
            padding: 10px;
        }
+       #grid #article{
+           margin-right: 30px;
+       }
+
    </style>
 </head>
 <body>
     <h1><a href="index.html">Deep wide Studio</a></h1>
-    <ol>
-        <li><a href="1.html">Deep Diving Diary</a></li>
-        <li><a href="2.html">Deep Wide School</a></li>
-        <li><a href="3.html">Deep Wide Project</a></li>
-    </ol>
-    <h2>What is Deep wide Studio?</h2>
-    <img src="diving.image.jpg" width="100%">
-    <p>안녕하세요. Deep wide Studio의 Deep Diver입니다. 깊고 넓은 물로 나아가는 과정들이 켜켜이 쌓일 예정입니다.</p>
+    <div id= "grid">
+            <ol>
+                <li><a href="1.html">Deep Diving Diary</a></li>
+                <li><a href="2.html">Deep Wide School</a></li>
+                <li><a href="3.html">Deep Wide Project</a></li>
+            </ol>
+        <div id="article">
+            <h2>What is Deep wide Studio?</h2>
+            <img src="diving.image.jpg" width="100%">
+            <p>안녕하세요. Deep wide Studio의 Deep Diver입니다. 깊고 넓은 물로 나아가는 과정들이 켜켜이 쌓일 예정입니다.</p>
+        </div>
+    </div>
 
     <div id="disqus_thread"></div>
     <script>
